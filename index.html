@@ -1,0 +1,353 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Bahnschrift SemiLight";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Blackadder ITC";
+	panose-1:4 2 5 5 5 16 7 2 13 2;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-family:"Bahnschrift SemiLight",sans-serif'>                      
+</span><b><span style='font-size:26.0pt;line-height:107%;font-family:"Bahnschrift SemiLight",sans-serif'>Tryhackme:
+Brooklyn Nine Nine</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:26.0pt;line-height:107%;
+font-family:"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Welcome folks! Today, we are going to root
+a new machine named Brooklyn Nine Nine on <span class=MsoHyperlink><a
+href="http://www.tryhackme.com">www.tryhackme.com</a></span>. This is an easy
+machine to root.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Let’s begin….</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>As always our first step is recon</span><span
+style='font-size:18.0pt;line-height:107%;font-family:Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>We will do this by running nmap.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Nmap, short for Network Mapper, is a free,
+open-source tool for vulnerability scanning and network discovery. Network
+administrators use Nmap to identify what devices are running on their systems,
+discovering hosts that are available and the services they offer, finding open
+ports and detecting security risks.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;nmap –sC –sV –Pn &lt;machine-ip&gt;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=603 height=337
+id="Picture 1" src="Brooklyn%20Nine%20Nine_files/image001.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>We can see from the scan results that we
+have 3 open ports:</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>21 : ftp</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>22: ssh</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>80: http</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Let’s head to ftp login which I always
+prefer as it may contain some juicy information.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;ftp &lt;machine-ip&gt;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>As anonymous login is allowed, let’s enter
+the name as anonymous and leave the password field as blank.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>After logging in as anonymous list down the
+contents using ls command.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=610 height=238
+id="Picture 2" src="Brooklyn%20Nine%20Nine_files/image002.png"></span><span
+style='font-size:18.0pt;line-height:107%;font-family:"Bahnschrift SemiLight",sans-serif'> </span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>We have a txt file here named
+note_to_jake.txt. Let’s view this file with the help of following command</span><span
+style='font-size:18.0pt;line-height:107%;font-family:Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;get note_to_jake.txt –</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=614 height=169
+id="Picture 3" src="Brooklyn%20Nine%20Nine_files/image003.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Woah, we can see that we have three names
+here:</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Amy</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Jake</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Holt</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Let’s quickly perform a brute force attack
+with username Jake. I will be using hydra to perform this brute-force attack.
+We can close the ftp connection now and let’s find a password to ssh into the
+machine with user jake.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Hydra is a brute force password cracking
+tool. In information security (IT security), password cracking is the
+methodology of guessing passwords from databases that have been stored in or
+are in transit within a computer system or network.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>We can perform this attack by using the
+command</span><span style='font-size:18.0pt;line-height:107%;font-family:Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;hydra -l jake -P rockyou.txt
+ssh://&lt;machine-ip&gt; -f -VV -t 4</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=613 height=340
+id="Picture 4" src="Brooklyn%20Nine%20Nine_files/image004.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>After some time we will get our password.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Now, with the brute-forced password, let’s
+do ssh login in the machine.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>This can be done with the following command</span><span
+style='font-size:18.0pt;line-height:107%;font-family:Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;ssh jake@&lt;TARGET IP&gt;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=601 height=112
+id="Picture 5" src="Brooklyn%20Nine%20Nine_files/image005.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Now, let’s list down the contents by the
+command</span><span style='font-size:18.0pt;line-height:107%;font-family:Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;ls –la</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=603 height=187
+id="Picture 6" src="Brooklyn%20Nine%20Nine_files/image006.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>There’s nothing which is useful for us.
+Let’s move out of this directory by the command</span><span style='font-size:
+18.0pt;line-height:107%;font-family:Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;cd ..</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>List down the contents in this directory</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=378 height=58
+id="Picture 7" src="Brooklyn%20Nine%20Nine_files/image007.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>That’s nice!!! we got the directories with
+the usernames which we had got earlier.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Let’s list down the contents.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=369 height=115
+id="Picture 8" src="Brooklyn%20Nine%20Nine_files/image008.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>We got our first flag here. Let’s view this
+txt file by the command</span><span style='font-size:18.0pt;line-height:107%;
+font-family:Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;cat user.txt</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Now, our next step is to head to root and
+find the root flag.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Let’s check the priveleges of jake by using
+the command</span><span style='font-size:18.0pt;line-height:107%;font-family:
+Wingdings'>à</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;sudo –l</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=595 height=104
+id="Picture 9" src="Brooklyn%20Nine%20Nine_files/image009.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Okayyyy, so we can run less with sudo here.
+Let’s get our root flag now.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&gt;sudo /usr/bin/less /root/root.txt</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'><img border=0 width=351 height=59
+id="Picture 10" src="Brooklyn%20Nine%20Nine_files/image010.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Congrats!!!!!!!</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>We got the root flag.</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>Write-up by </span><span style='font-size:
+18.0pt;line-height:107%;font-family:"Blackadder ITC"'>Tejas Anand</span></p>
+
+<p class=MsoNormal><span style='font-size:18.0pt;line-height:107%;font-family:
+"Bahnschrift SemiLight",sans-serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
+
